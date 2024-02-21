@@ -3,9 +3,19 @@ const ytdl = require('ytdl-core');
 const cors = require('cors');
 const app = express();
 
-app.use(cors({
-  origin: 'https://xddown.pages.dev'
-}));
+// Allow requests from your Cloudflare Pages domain
+const allowedOrigins = ['https://xddown.pages.dev'];
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
+};
+
+app.use(cors(corsOptions));
 
 // Function to sanitize filename
 function sanitizeFilename(filename) {
