@@ -3,9 +3,9 @@ const ytdl = require('ytdl-core');
 const cors = require('cors');
 const app = express();
 
-app.use(cors([
-    origin: 'https://xddown.pages.dev/'
-]));
+app.use(cors({
+  origin: 'https://xddown.pages.dev'
+}));
 
 // Function to sanitize filename
 function sanitizeFilename(filename) {
