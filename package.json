@@ -1,11 +1,10 @@
 {
   "name": "xawo-serverless",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.10.0",
+  "description": "Xawo Server",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "build": "netlify deploy --prod"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
