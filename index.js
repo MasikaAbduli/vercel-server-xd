@@ -7,7 +7,7 @@ const instagramGetUrl = require("./ig")
 const Tiktok = require("@tobyg74/tiktok-api-dl")
 const { YTDL } = require("ytdl-easy");
 var ytdl = require("ytdl-core");
-const { yt5s } = require("@sl-code-lords/youtube-dl");
+//const { yt5s } = require("@sl-code-lords/youtube-dl");
 const { twitter } = require("imran-downloader-servar");
 
 const app = express();
@@ -26,7 +26,7 @@ app.get("/youtube-download", async (req, res) => {
   });
 });
 
-app.get("/youtube-audio-download", async (req, res) => {
+/*app.get("/youtube-audio-download", async (req, res) => {
   const inputValue = req.query.input;
   const youtubeURL = inputValue;
 
@@ -46,7 +46,7 @@ app.get("/youtube-audio-download", async (req, res) => {
   };
   console.log(data);
   res.json(data);
-});
+});*/
 
 app.get("/instagram-downloader", async (req, res) => {
   const inputValue = req.query.input;
