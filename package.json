@@ -28,9 +28,8 @@
     "netlify-lambda": "^2.0.16",
     "serverless-http": "^3.2.0",
     "tiktod": "^1.0.0",
-    "yt-search": "^2.10.4",
     "ytdl-core": "^4.0.0",
     "ytdl-easy": "^1.1.5",
-    "yt-search": "^2.10.4",
+    "yt-search": "^2.10.4"
   }
 }
