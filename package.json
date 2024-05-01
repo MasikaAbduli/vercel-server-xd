@@ -1,21 +1,36 @@
 {
-  "name": "server",
+  "name": "xawo-serverless",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "engines": {
-    "node": "18.x"
-  },
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "netlify deploy --prod"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@kaveesha-sithum/tiktok-dl": "^2.0.0",
+    "@prevter/tiktok-scraper": "^1.0.1",
+    "@sasmeee/tkdl": "^1.0.3",
+    "@sl-code-lords/youtube-dl": "^1.0.4",
+    "@tobyg74/tiktok-api-dl": "^1.0.14",
+    "axios": "^1.6.8",
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "ytdl-core": "^4.11.5"
+    "express": "^4.17.1",
+    "get-twitter-media": "^2.0.8",
+    "got": "^14.2.1",
+    "ig-unduh": "^1.0.1",
+    "imran-downloader-servar": "^2.3.9",
+    "nayan-media-downloader": "^2.0.3",
+    "netlify-cli": "^17.23.1",
+    "netlify-lambda": "^2.0.16",
+    "serverless-http": "^3.2.0",
+    "tiktod": "^1.0.0",
+    "yt-search": "^2.10.4",
+    "ytdl-core": "^4.0.0",
+    "ytdl-easy": "^1.1.5"
   }
 }
